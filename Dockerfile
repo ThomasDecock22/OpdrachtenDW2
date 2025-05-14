@@ -13,4 +13,4 @@ WORKDIR /var/www/html/
 
 EXPOSE 80/tcp
 
-CMD service apache2 start && bash
+CMD ["apachectl", "-D", "FOREGROUND"]
